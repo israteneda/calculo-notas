@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Calculo de notas de Inglés - Distancia</h1>  
-  <label for="1er-guia">1P - 1er-GUIA DE ESTUDIO</label> <input type="text" name="1er-guia" id="1er-guia"><br> <!-- Peso 1 -->
-  <label for="1er-actividad">2P - 1er-ACTIVIDADES INTERACTIVAS</label> <input type="text" name="1er-actividad" id="1er-actividad"><br> <!-- Peso 1 -->
-  <label for="1er-evaluacion">3P - 1er-EVALUACION PRESENCIAL</label> <input type="text" name="1er-evaluacion" id="1er-evaluacion"><br> <!-- Peso 3 -->
-  <label for="2do-guia">4P - 2do-GUIA DE ESTUDIO</label> <input type="text" name="2do-guia" id="2do-guia"><br> <!-- Peso 1 -->
-  <label for="2do-actividad">5P - 2do-ACTIVIDADES INTERACTIVAS</label> <input type="text" name="2do-actividad" id="2do-actividad"><br> <!-- Peso 1 -->
-  <label for="2do-evaluacion">6P - 2do-EVALUACION PRESENCIAL</label> <input type="text" name="2do-evaluacion" id="2do-evaluacion"><br> <!-- Peso 3 -->
-  
-  <!-- En base a esta nota se calcularían las notas anteriores automáticamente -->
-  <label for="nota-deseada">6P - 2do-EVALUACION PRESENCIAL</label> <input type="text" name="nota-deseada" id="nota-deseada"><br> <!-- Nota con la que el estudiante deseea pasar -->
+  <div class="container">
+    <h2 style="text-align: center;margin-bottom: 30px;">Calculo de notas de Inglés</h2>  
+    <label for="1er-guia" class="label">1P - 1er-GUIA DE ESTUDIO</label> <input type="number" name="1er-guia" id="1er-guia" class="input"> <!-- Peso 1 -->
+    <label for="1er-actividad" class="label">2P - 1er-ACTIVIDADES INTERACTIVAS</label> <input type="number" name="1er-actividad" id="1er-actividad" class="input"> <!-- Peso 1 -->
+    <label for="1er-evaluacion" class="label">3P - 1er-EVALUACION PRESENCIAL</label> <input type="number" name="1er-evaluacion" id="1er-evaluacion" class="input"> <!-- Peso 3 -->
+    <label for="2do-guia" class="label">4P - 2do-GUIA DE ESTUDIO</label> <input type="number" name="2do-guia" id="2do-guia" class="input"> <!-- Peso 1 -->
+    <label for="2do-actividad" class="label">5P - 2do-ACTIVIDADES INTERACTIVAS</label> <input type="number" name="2do-actividad" id="2do-actividad" class="input"> <!-- Peso 1 -->
+    <label for="2do-evaluacion" class="label">6P - 2do-EVALUACION PRESENCIAL</label> <input type="number" name="2do-evaluacion" id="2do-evaluacion" class="input"> <!-- Peso 3 -->
+    <!-- En base a esta nota se calcularían las notas anteriores automáticamente -->
+    <label for="nota-deseada" class="label-nota-deseada">NOTA DESEADA</label> <input type="number" name="nota-deseada" id="nota-deseada" class="input-nota-deseada "> <!-- Nota con la que el estudiante deseea pasar -->
 
+    <button>Calcular</button>
+  </div>
 <script src="index.js"></script>
 </body>
 </html>
