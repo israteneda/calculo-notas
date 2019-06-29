@@ -1,34 +1,63 @@
-.label{
-    display: block;
-    float: left;
-    clear: left;
-    width: 300px;
-    text-align: left;
-    margin-bottom: 5px;
-}
-.input {
-  display: block;
-  float: left;
-  margin-bottom: 5px;
+body { margin:0 10px; } 
+
+body{
+  font-family: 'Open Sans', sans-serif;
 }
 
-.label-nota-deseada{
-    display: block;
-    float: left;
-    clear: left;
-    width: 300px;
-    text-align: center;
-    margin-top: 30px;
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
-.input-nota-deseada {
-  display: block;
-  float: left;
-  margin-top: 30px;
-}
+
+button:focus {outline:0;}
 
 .container {
     max-width: 500px;
     margin: auto;
-    margin-top: 75px;
+    margin-top: 5%;
+    border-style: solid;
+    border-radius: 7px;
+    padding: 0 15px;
+}
+
+.grades-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.grade{
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.desire-grade{
+  margin-top: 10%;
+}
+
+.label{
+  min-width: 70%;
+}
+
+.input{
+  min-width: 30%;
+  min-height: 25px;
+  border-radius: 5px;
+}
+
+.input:focus{
+  outline: 0;
+}
+
+#button {
+  margin: 25px;
+  width: 30%;
+  height: 35px;
+  margin-left: 35%;
+  margin-right: 45%;
+  border-radius: 5px;
+  font-weight: bold;
 }
 

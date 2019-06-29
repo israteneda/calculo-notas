@@ -6,21 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Notas de Inglés</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <h2 style="text-align: center;margin-bottom: 30px;">Calculo de notas de Inglés</h2>  
-    <label for="1er-guia" class="label">1P - 1er-GUIA DE ESTUDIO</label> <input type="number" name="1er-guia" id="1er-guia" class="input"> <!-- Peso 1 -->
-    <label for="1er-actividad" class="label">2P - 1er-ACTIVIDADES INTERACTIVAS</label> <input type="number" name="1er-actividad" id="1er-actividad" class="input"> <!-- Peso 1 -->
-    <label for="1er-evaluacion" class="label">3P - 1er-EVALUACION PRESENCIAL</label> <input type="number" name="1er-evaluacion" id="1er-evaluacion" class="input"> <!-- Peso 3 -->
-    <label for="2do-guia" class="label">4P - 2do-GUIA DE ESTUDIO</label> <input type="number" name="2do-guia" id="2do-guia" class="input"> <!-- Peso 1 -->
-    <label for="2do-actividad" class="label">5P - 2do-ACTIVIDADES INTERACTIVAS</label> <input type="number" name="2do-actividad" id="2do-actividad" class="input"> <!-- Peso 1 -->
-    <label for="2do-evaluacion" class="label">6P - 2do-EVALUACION PRESENCIAL</label> <input type="number" name="2do-evaluacion" id="2do-evaluacion" class="input"> <!-- Peso 3 -->
-    <!-- En base a esta nota se calcularían las notas anteriores automáticamente -->
-    <label for="nota-deseada" class="label-nota-deseada">NOTA DESEADA</label> <input type="number" name="nota-deseada" id="nota-deseada" class="input-nota-deseada "> <!-- Nota con la que el estudiante deseea pasar -->
+    <h2 style="text-align: center;margin-bottom: 30px;">Cálculo de notas</h2>  
+    
+    <div class="grades-container">
+        <!-- LABELS -->
+        <div class="grade">
+          <label for="1er-guia" class="label">1P - 1er-GUIA DE ESTUDIO</label> <input type="number" name="1er-guia" id="1er-guia" class="input"> <!-- Peso 1 -->
+        </div>
+        <div class="grade">
+          <label for="1er-actividad" class="label">2P - 1er-ACTIVIDADES INTERACTIVAS</label> <input type="number" name="1er-actividad" id="1er-actividad" class="input"> <!-- Peso 1 -->
+        </div>
+        <div class="grade">
+          <label for="1er-evaluacion" class="label">3P - 1er-EVALUACION PRESENCIAL</label> <input type="number" name="1er-evaluacion" id="1er-evaluacion" class="input"> <!-- Peso 3 -->
+        </div>
+        <div class="grade">
+          <label for="2do-guia" class="label">4P - 2do-GUIA DE ESTUDIO</label><input type="number" name="2do-guia" id="2do-guia" class="input"> <!-- Peso 1 -->
+        </div>
+        <div class="grade">
+          <label for="2do-actividad" class="label">5P - 2do-ACTIVIDADES INTERACTIVAS</label> <input type="number" name="2do-actividad" id="2do-actividad" class="input"> <!-- Peso 1 -->
+        </div>
+        <div class="grade">
+          <label for="2do-evaluacion" class="label">6P - 2do-EVALUACION PRESENCIAL</label><input type="number" name="2do-evaluacion" id="2do-evaluacion" class="input"> <!-- Peso 3 -->
+        </div>
+        <div class="grade desire-grade">
+          <!-- En base a esta nota se calcularían las notas anteriores automáticamente -->
+          <label for="nota-deseada" class="label">NOTA DESEADA</label> <input type="number" name="nota-deseada" id="nota-deseada" class="input"> <!-- Nota con la que el estudiante deseea pasar -->
+        </div>
+        <small style="font-size: 10px;margin-top: 3px;">* Recuerda que la nota mínima para pasar el semestre es 14</small>
+      </div>
 
-    <button>Calcular</button>
+    <button id="button">Calcular</button>
   </div>
+  
 <script src="index.js"></script>
 </body>
 </html>
