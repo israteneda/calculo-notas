@@ -15,7 +15,8 @@ button:focus {outline:0;}
 .container {
     max-width: 500px;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 5px;
+    margin-bottom : 5px;
     border-style: solid;
     border-radius: 7px;
     padding: 0 15px;
