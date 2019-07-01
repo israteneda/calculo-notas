@@ -15,39 +15,37 @@
     <h2>Cómo funciona?</h2>
 
     <p>
-        Ingresa las notas que tengas en la plataforma MIESPE en cada una de las cajas de texto,
-        si no tienes todas las notas puedes dejar las cajas de texto en blanco, la única caja de
-        texto que no puede estar vacía es <b>NOTA DESEADA</b> ya que en base a esta nota se calculan
-        todas las anteriores.</p>
+    Ingresa las notas que tengas en la plataforma MIESPE en cada una de las cajas de texto
+    para calcular tu <b>NOTA FINAL.</b>
+    </p>
     
-    <div class="grades-container">
+    <div id="grades-container">
         <!-- LABELS -->
         <div class="grade">
-          <label for="1er-guia" class="label">1P - 1er-GUIA DE ESTUDIO</label> <input type="number" name="1er-guia" id="1er-guia" class="input"> <!-- Peso 1 -->
+          <label for="1er-guia" class="label">1P - 1er-GUIA DE ESTUDIO</label> <input type="number" name="1er-guia" id="1er-guia" class="input" value="14" oninput="computeGrade(event.currentTarget)" onclick="clearInput(event.currentTarget)"> <!-- Peso 1 -->
         </div>
         <div class="grade">
-          <label for="1er-actividad" class="label">2P - 1er-ACTIVIDADES INTERACTIVAS</label> <input type="number" name="1er-actividad" id="1er-actividad" class="input"> <!-- Peso 1 -->
+          <label for="1er-actividad" class="label">2P - 1er-ACTIVIDADES INTERACTIVAS</label> <input type="number" name="1er-actividad" id="1er-actividad" class="input" value="14" oninput="computeGrade(event.currentTarget)" onclick="clearInput(event.currentTarget)"> <!-- Peso 1 -->
         </div>
         <div class="grade">
-          <label for="1er-evaluacion" class="label">3P - 1er-EVALUACION PRESENCIAL</label> <input type="number" name="1er-evaluacion" id="1er-evaluacion" class="input"> <!-- Peso 3 -->
+          <label for="1er-evaluacion" class="label">3P - 1er-EVALUACION PRESENCIAL</label> <input type="number" name="1er-evaluacion" id="1er-evaluacion" class="input" value="14" oninput="computeGrade(event.currentTarget)" onclick="clearInput(event.currentTarget)"> <!-- Peso 3 -->
         </div>
         <div class="grade">
-          <label for="2do-guia" class="label">4P - 2do-GUIA DE ESTUDIO</label><input type="number" name="2do-guia" id="2do-guia" class="input"> <!-- Peso 1 -->
+          <label for="2do-guia" class="label">4P - 2do-GUIA DE ESTUDIO</label><input type="number" name="2do-guia" id="2do-guia" class="input" value="14" oninput="computeGrade(event.currentTarget)" onclick="clearInput(event.currentTarget)" onclick="clearInput(event.currentTarget)"> <!-- Peso 1 -->
         </div>
         <div class="grade">
-          <label for="2do-actividad" class="label">5P - 2do-ACTIVIDADES INTERACTIVAS</label> <input type="number" name="2do-actividad" id="2do-actividad" class="input"> <!-- Peso 1 -->
+          <label for="2do-actividad" class="label">5P - 2do-ACTIVIDADES INTERACTIVAS</label> <input type="number" name="2do-actividad" id="2do-actividad" class="input" value="14" oninput="computeGrade(event.currentTarget)" onclick="clearInput(event.currentTarget)"> <!-- Peso 1 -->
         </div>
         <div class="grade">
-          <label for="2do-evaluacion" class="label">6P - 2do-EVALUACION PRESENCIAL</label><input type="number" name="2do-evaluacion" id="2do-evaluacion" class="input"> <!-- Peso 3 -->
+          <label for="2do-evaluacion" class="label">6P - 2do-EVALUACION PRESENCIAL</label><input type="number" name="2do-evaluacion" id="2do-evaluacion" class="input" value="14" oninput="computeGrade(event.currentTarget)" onclick="clearInput(event.currentTarget)"> <!-- Peso 3 -->
         </div>
-        <div class="grade desire-grade">
+        <div class="grade final-grade">
           <!-- En base a esta nota se calcularían las notas anteriores automáticamente -->
-          <label for="nota-deseada" class="label">NOTA DESEADA</label> <input type="number" name="nota-deseada" id="nota-deseada" class="input"> <!-- Nota con la que el estudiante deseea pasar -->
+          <p><b>NOTA FINAL</b></p><p id="nota-final">14</p> <!-- Nota con la que el estudiante deseea pasar -->
         </div>
         <small style="font-size: 10px;margin-top: 3px;">* Recuerda que la nota mínima para pasar el semestre es 14</small>
+        <br>
       </div>
-
-    <button id="button">Calcular</button>
   </div>
   
 <script src="index.js"></script>

@@ -10,8 +10,6 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
-button:focus {outline:0;}
-
 .container {
     max-width: 500px;
     margin: auto;
@@ -22,7 +20,7 @@ button:focus {outline:0;}
     padding: 0 15px;
 }
 
-.grades-container{
+#grades-container{
   display: flex;
   flex-direction: column;
 }
@@ -34,10 +32,6 @@ button:focus {outline:0;}
   align-items: baseline;
 }
 
-.desire-grade{
-  margin-top: 10%;
-}
-
 .label{
   min-width: 70%;
 }
@@ -46,19 +40,16 @@ button:focus {outline:0;}
   min-width: 30%;
   min-height: 25px;
   border-radius: 5px;
+  font-weight: bold;
+  padding-left: 3px;
 }
 
 .input:focus{
   outline: 0;
 }
 
-#button {
-  margin: 25px;
-  width: 30%;
-  height: 35px;
-  margin-left: 35%;
-  margin-right: 45%;
-  border-radius: 5px;
+#nota-final{
+  font-size: 1.5em;
+  text-align: center;
   font-weight: bold;
 }
-
